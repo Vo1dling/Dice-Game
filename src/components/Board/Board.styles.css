@@ -1,0 +1,171 @@
+@font-face {
+  font-family: "Terraria";
+  src: url("../Fonts/ANDYB.TTF") format("truetype");
+}
+:root {
+  --main-color: purple;
+  --secondary-color: #333;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Terraria";
+}
+body {
+  background-image: url(./assets/imgs/Terraria_background.png);
+}
+.player-1 {
+  border: 10px solid transparent;
+  padding: 15px;
+  border-image: url(./assets/imgs/wood.png) 10 round;
+}
+.player-2 {
+  border: 10px solid transparent;
+  padding: 15px;
+  border-image: url(./assets/imgs/stone.png) 10 round;
+}
+.player-1,
+.player-2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #333;
+  transition: all 0.5s ease;
+}
+.landing-page {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  top: 0;
+  background-color: #3338;
+  backdrop-filter: blur(2px);
+  opacity: 1;
+  transition: all 0.75s ease;
+}
+.landing-page h3 {
+  color: #333;
+}
+.landing-page input {
+  width: 15%;
+  height: 5vh;
+  background: black;
+  color: white;
+  margin: 1rem;
+}
+.landing-page input::placeholder {
+  font-size: 1rem;
+  color: white;
+  font-style: bold;
+}
+.landing-page input:focus {
+  outline: none;
+}
+.game-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+}
+.game-container > div {
+  width: 100%;
+}
+.dice-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+.dice-container .container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 1rem 0;
+  filter: invert(100%) brightness(200%);
+}
+.settings-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.player-1.active-turn {
+  background-image: url(./assets/imgs/wood_wall.png);
+  color: white;
+}
+.player-2.active-turn {
+  background-image: url(./assets/imgs/stone_wall.png);
+  color: white;
+}
+.popup-message {
+  width: 20%;
+  height: 20vh;
+  background-color: #fff;
+  border: 10px solid transparent;
+  padding: 15px;
+  border-image: url(./assets/imgs/gold_block.png) 10 round;
+  position: absolute;
+  left: 40%;
+  top: 2%;
+  opacity: 1;
+  transition: all 1s ease;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: black;
+}
+.transform-y {
+  transform: translateY(-120%);
+}
+.animation-container {
+  animation: diceRoll 0.5s ease 1 forwards;
+}
+@keyframes diceRoll {
+  0% {
+    transform: initial;
+  }
+  100% {
+    transform: rotate(180deg);
+  }
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+.opacity-hidden {
+  opacity: 0;
+}
+.z-position {
+  z-index: -100;
+}
+button {
+  background: transparent;
+  border: 1px;
+  color: black;
+  border: 5px solid transparent;
+  padding: 2px;
+  font-size: 2rem;
+}
+button:hover {
+  background: purple;
+  border-image: url(./assets/imgs/gold_block.png) 10 round;
+}
+.reset-img {
+  background-image: url(./assets/imgs/reset.gif);
+  color: transparent;
+}

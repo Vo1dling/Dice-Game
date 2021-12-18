@@ -18,11 +18,14 @@ class Dice extends React.Component {
 	};
 	render() {
 		return (
-			<div>
-				<div id="dice1"></div>
-				<div id="dice2"></div>
+			<div className="dice-container">
+					<div id="dice1"></div>
+					<div id="dice2"></div>
 				<button type="button" onClick={this.RollDice}>
-					Throw
+					<span className="throw-img">asdasdd</span> Throw
+				</button>
+				<button type="button" onClick={this.props.onClick} className="hold-btn">
+				    <span className="hold-img">//</span> Hold
 				</button>
 			</div>
 		);
