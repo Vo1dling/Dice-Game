@@ -30,10 +30,10 @@
   margin: 0.5rem 0;
 }
 .throw-img {
-  background-image: url(./assets/img/Throw.png);
+  background-image: url(./assets/img/throw.png);
   color: transparent;
 }
 .hold-img {
-  background-image: url(./assets/img/Hold.png);
+  background-image: url(./assets/img/hold.png);
   color: transparent;
 }
