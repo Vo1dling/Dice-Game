@@ -25,7 +25,7 @@ class Dice extends React.Component {
 					<span className="throw-img">asdasdd</span> Throw
 				</button>
 				<button type="button" onClick={this.props.onClick} className="hold-btn">
-				    <span className="hold-img">//</span> Hold
+				    <span className="hold-img">aa</span> Hold
 				</button>
 			</div>
 		);
