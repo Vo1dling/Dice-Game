@@ -56,14 +56,14 @@ class Board extends React.Component {
   };
   ChangeThreshold = () => {
     const input = document.querySelector(".input-threshold");
-    if (+input.value >= 20 && +input.value <= 200) {
+    if (+input.value >= 250 && +input.value <= 400) {
       this.setState({ pointsToWin: +input.value });
       document.querySelector(".landing-page").classList.add("opacity-hidden");
       setTimeout(() => {
         document.querySelector(".landing-page").classList.add("z-position");
       }, 750);
     } else {
-      this.CallPopup("Please insert a number between 20 and 200");
+      this.CallPopup("Please insert a number of blocks between 150 and 400");
     }
   };
   CallPopup(message) {
@@ -152,7 +152,7 @@ class Board extends React.Component {
           <Player playerNumber={2} tempScore={p2Temp} globalScore={p2Score} />
         </div>
         <div className="landing-page">
-          <h3>Please Input a number between 20 and 200</h3>
+          <h3>Please Input a number between 250 and 400</h3>
           <input
             type="number"
             placeholder="Type in the threshold for winning..."
