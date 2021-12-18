@@ -32,10 +32,10 @@ class Dice extends React.Component {
         <div id="dice1"></div>
         <div id="dice2"></div>
         <button type="button" onClick={this.RollDice}>
-          <img src={throwImage} alt="Throw Image" /> Throw
+          <img src={throwImage} alt="Throw" /> Throw
         </button>
         <button type="button" onClick={this.props.onClick} className="hold-btn">
-          <img src={holdImage} alt="Hold Image" /> Hold
+          <img src={holdImage} alt="Hold" /> Hold
         </button>
       </div>
     );

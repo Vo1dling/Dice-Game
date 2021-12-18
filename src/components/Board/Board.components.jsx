@@ -141,7 +141,7 @@ class Board extends React.Component {
 
           <div className="settings-container">
             <button type="button" onClick={this.ResetGame}>
-              <img src={resetImage} alt="Reset Image" /> Reset Game
+              <img src={resetImage} alt="Reset" /> Reset Game
             </button>
             <Dice
               onChange={this.OnScoreChange}
