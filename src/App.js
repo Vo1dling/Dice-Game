@@ -1,8 +1,8 @@
-import logo from "./logo.svg";
 import "./App.css";
+import Board from "./components/Board.components";
 
 function App() {
-  return <App />;
+	return <Board />;
 }
 
 export default App;
