@@ -143,7 +143,6 @@ input::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
-
 input[type="number"] {
   -moz-appearance: textfield;
 }
@@ -168,4 +167,10 @@ button:hover {
 .reset-img {
   background-image: url(./assets/imgs/reset.gif);
   color: transparent;
+}
+.display-none {
+  display: none;
+}
+.winner-text {
+  font-size: 5rem;
 }
