@@ -1,7 +1,7 @@
 import React from "react";
 import "./Dice.styles.css";
 import throwImage from "./assets/img/throw.png";
-import holdImage from "./assets/img/hold.png";
+import holdImage from "./assets/img/hold.gif";
 class Dice extends React.Component {
   state = { dice1: 0, dice2: 0, diceSum: 0 };
   RollDice = () => {
@@ -35,7 +35,7 @@ class Dice extends React.Component {
           <img src={throwImage} alt="Throw" /> Throw
         </button>
         <button type="button" onClick={this.props.onClick} className="hold-btn">
-          <img src={holdImage} alt="Hold" /> Hold
+          <img src={holdImage} alt="Hold" className="hold-img" /> Hold
         </button>
       </div>
     );

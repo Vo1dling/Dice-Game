@@ -29,13 +29,6 @@
 .dice-container button {
   margin: 0.5rem 0;
 }
-.throw-img {
-  background: url(./assets/img/throw.png) no-repeat center center/cover;
-  color: transparent;
-  width: 100px;
-  height: 100px;
-}
 .hold-img {
-  background-image: url(./assets/img/hold.png);
-  color: transparent;
+  width: 100px;
 }

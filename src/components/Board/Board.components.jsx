@@ -1,11 +1,19 @@
 import React from "react";
 import Player from "../Player/Player.components";
 import Dice from "../Dice/Dice.components";
+import BGMusic from "../../audio/BGMusic.mp3";
 import "./Board.styles.css";
 import resetImage from "./assets/imgs/reset.gif";
 class Board extends React.Component {
   componentDidMount() {
     this.ChangeActivePlayer();
+    const BG = new Audio(BGMusic);
+    document.body.addEventListener("click", () => {
+      BG.play();
+    });
+    BG.addEventListener("ended", () => {
+      BG.play();
+    });
   }
   state = {
     p1Score: 0,

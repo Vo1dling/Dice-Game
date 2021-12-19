@@ -164,10 +164,6 @@ button:hover {
   background: purple;
   border-image: url(./assets/imgs/gold_block.png) 10 round;
 }
-.reset-img {
-  background-image: url(./assets/imgs/reset.gif);
-  color: transparent;
-}
 .display-none {
   display: none;
 }
