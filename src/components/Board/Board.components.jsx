@@ -2,6 +2,7 @@ import React from "react";
 import Player from "../Player/Player.components";
 import Dice from "../Dice/Dice.components";
 import BGMusic from "../../audio/BGMusic.mp3";
+import HoldSound from "../../audio/HoldSound.mp3";
 import "./Board.styles.css";
 import resetImage from "./assets/imgs/reset.gif";
 class Board extends React.Component {
@@ -61,6 +62,7 @@ class Board extends React.Component {
         this.CheckScore
       );
     }
+    new Audio(HoldSound).play();
   };
   ChangeThreshold = () => {
     const input = document.querySelector(".input-threshold");
