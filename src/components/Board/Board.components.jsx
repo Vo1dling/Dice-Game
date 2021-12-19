@@ -62,7 +62,7 @@ class Board extends React.Component {
         this.CheckScore
       );
     }
-    new Audio(HoldSound).play();
+    if (!this.state.gameOver) new Audio(HoldSound).play();
   };
   ChangeThreshold = () => {
     const input = document.querySelector(".input-threshold");
