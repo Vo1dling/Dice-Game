@@ -1,20 +1,20 @@
 .number1 {
-  background: url("assets/img/dice-1.jpeg") no-repeat center center/cover;
+  background: url("../../assets/imgs/dice-1.jpeg") no-repeat center center/cover;
 }
 .number2 {
-  background: url("assets/img/dice-2.jpeg") no-repeat center center/cover;
+  background: url("../../assets/imgs/dice-2.jpeg") no-repeat center center/cover;
 }
 .number3 {
-  background: url("assets/img/dice-3.jpeg") no-repeat center center/cover;
+  background: url("../../assets/imgs/dice-3.jpeg") no-repeat center center/cover;
 }
 .number4 {
-  background: url("assets/img/dice-4.jpeg") no-repeat center center/cover;
+  background: url("../../assets/imgs/dice-4.jpeg") no-repeat center center/cover;
 }
 .number5 {
-  background: url("assets/img/dice-5.jpeg") no-repeat center center/cover;
+  background: url("../../assets/imgs/dice-5.jpeg") no-repeat center center/cover;
 }
 .number6 {
-  background: url("assets/img/dice-6.jpeg") no-repeat center center/cover;
+  background: url("../../assets/imgs/dice-6.jpeg") no-repeat center center/cover;
 }
 #dice1,
 #dice2 {
@@ -22,7 +22,7 @@
   height: 200px;
   border: 10px solid transparent;
   padding: 15px;
-  border-image: url(../Board/assets/imgs/gold_block.png) 10 round;
+  border-image: url("../../assets/imgs/gold_block.png") 10 round;
   transition: all 0.2s ease;
   margin-bottom: 6rem;
 }

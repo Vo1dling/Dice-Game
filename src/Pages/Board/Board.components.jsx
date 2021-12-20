@@ -1,10 +1,10 @@
 import React from "react";
-import Player from "../Player/Player.components";
-import Dice from "../Dice/Dice.components";
+import Player from "../../components/Player/Player.components";
+import Dice from "../../components/Dice/Dice.components";
 import BGMusic from "../../audio/BGMusic.mp3";
 import HoldSound from "../../audio/HoldSound.mp3";
 import "./Board.styles.css";
-import resetImage from "./assets/imgs/reset.gif";
+import resetImage from "../../assets/imgs/reset.gif";
 class Board extends React.Component {
   componentDidMount() {
     this.ChangeActivePlayer();
@@ -15,6 +15,7 @@ class Board extends React.Component {
     BG.addEventListener("ended", () => {
       BG.play();
     });
+    BG.volume = 0.075;
   }
   state = {
     p1Score: 0,
@@ -73,7 +74,7 @@ class Board extends React.Component {
         document.querySelector(".landing-page").classList.add("z-position");
       }, 750);
     } else {
-      this.CallPopup("Please insert a number of blocks between 150 and 400");
+      this.CallPopup("Please insert a number of blocks between 250 and 400");
     }
   };
   CallPopup(message) {
