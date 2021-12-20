@@ -6,8 +6,10 @@ import HoldSound from "../../audio/HoldSound.mp3";
 import "./Board.styles.css";
 import resetImage from "../../assets/imgs/reset.gif";
 class Board extends React.Component {
+  HS = new Audio(HoldSound);
   componentDidMount() {
     this.ChangeActivePlayer();
+
     const BG = new Audio(BGMusic);
     document.body.addEventListener("click", () => {
       BG.play();
@@ -63,7 +65,10 @@ class Board extends React.Component {
         this.CheckScore
       );
     }
-    if (!this.state.gameOver) new Audio(HoldSound).play();
+    if (!this.state.gameOver) {
+      this.HS.volume = 0.1;
+      this.HS.play();
+    }
   };
   ChangeThreshold = () => {
     const input = document.querySelector(".input-threshold");
